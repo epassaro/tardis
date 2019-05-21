@@ -18,10 +18,6 @@ prune build
 prune docs/_build
 prune docs/api
 
-recursive-include astropy_helpers *
-recursive-include astropy_helpers/astropy_helpers.egg-info *
-exclude astropy_helpers/.git
-exclude astropy_helpers/.gitignore
 # the next few stanzas are for astropy_helpers.  It's derived from the
 # astropy_helpers/MANIFEST.in, but requires additional includes for the actual
 # package directory and egg-info.
