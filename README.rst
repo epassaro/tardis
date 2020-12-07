@@ -110,5 +110,5 @@ The following bibtex entries are needed for the references.
           adsnote = {Provided by the SAO/NASA Astrophysics Data System}
     }
 
-.. literalinclude :: AUTHORS.md
+.. literalinclude :: ./AUTHORS.md
     :language: markdown
