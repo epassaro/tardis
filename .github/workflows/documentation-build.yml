@@ -9,7 +9,7 @@ on:
       - master
   pull_request:
     branches:
-      -master
+      - master
   schedule:
     - cron: '10 0 * * 0'
 
