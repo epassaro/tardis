@@ -7,6 +7,9 @@ on:
   push:
     branches:
       - master
+  pull_request:
+    branches:
+      - master
   schedule:
     - cron: '10 0 * * 0'
 
@@ -21,7 +24,7 @@ jobs:
         with:
             environment-file: tardis_env3.yml
             activate-environment: tardis
-            channels: conda-forge, defaults
+            channels: conda-forge
             mamba-version: "*"
 
       - name: Install TARDIS
