@@ -4,7 +4,7 @@
 name: documentation-build
 
 on:
-  push:
+  pull_request:
     branches:
       - master
   schedule:
@@ -25,9 +25,9 @@ jobs:
             channels: conda-forge
             mamba-version: "*"
 
-      - name: Install TARDIS
+      - name: Build C Extensions
         shell: bash -l {0}
-        run: python setup.py install 
+        run: python setup.py build_ext --inplace
 
       - name: Build Sphinx Documentation
         shell: bash -l {0}
