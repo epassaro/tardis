@@ -26,6 +26,13 @@ sys.path.insert(0, os.path.abspath('..'))
 # Thus, any C-extensions that are needed to build the documentation will *not*
 # be accessible, and the documentation will not build correctly.
 
+# Get configuration information from setup.cfg
+from configparser import ConfigParser
+conf = ConfigParser()
+
+conf.read([os.path.join(os.path.dirname(__file__), '..', 'setup.cfg')])
+setup_cfg = dict(conf.items('metadata'))
+
 # Load all of the global Astropy configuration
 
 intersphinx_mapping = {
