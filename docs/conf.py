@@ -106,11 +106,13 @@ master_doc = 'index'
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 
-import tardis
+__import__(setup_cfg['package_name'])
+package = sys.modules[setup_cfg['package_name']]
+
 # The short X.Y version.
-version = tardis.__version__.split('-', 1)[0]
+version = package.__version__.split('-', 1)[0]
 # The full version, including alpha/beta/rc tags.
-release = tardis.__version__
+release = package.__version__
 
 
 # -- APIDoc configuration -----------------------------------------------------
