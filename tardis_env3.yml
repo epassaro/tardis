@@ -44,7 +44,7 @@ dependencies:
   - plotly
 
   # Documentation
-  - sphinx=3.3
+  - sphinx
   - nbconvert
   - numpydoc
   - docutils
@@ -55,7 +55,7 @@ dependencies:
   - sphinxcontrib-apidoc
   - sphinx_rtd_theme
   - recommonmark
-
+  - parso=0.8
   # Test/Coverage requirements
   - git-lfs
   - pytest=5
