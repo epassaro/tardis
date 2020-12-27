@@ -44,7 +44,7 @@ dependencies:
   - plotly
 
   # Documentation
-  - sphinx
+  - sphinx=3.3
   - nbconvert
   - numpydoc
   - docutils
