@@ -25,13 +25,13 @@ jobs:
             channels: conda-forge
             mamba-version: "*"
 
-      - name: Build C Extensions
+      - name: Install TARDIS Package
         shell: bash -l {0}
         run: python setup.py install
 
       - name: Build Sphinx Documentation
         shell: bash -l {0}
-        run: cd docs && make html
+        run: python setup.py buid_docs
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
