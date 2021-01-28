@@ -108,7 +108,7 @@
 <p class="caption"><span class="caption-text">The Physics of TARDIS</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../physics/montecarlo/index.html">Monte Carlo Primer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../physics/plasma.html">Plasma</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../physics/plasma/index.html">Plasma</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../physics/old_physics/index.html">Old Physics Section (Outdated)</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Research with TARDIS</span></p>
@@ -408,13 +408,13 @@
     <span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        A function to uniformly store TARDIS data to an HDF file.</span>
-<span class="sd">        </span>
+
 <span class="sd">        Scalars will be stored in a Series under path/scalars</span>
 <span class="sd">        1D arrays will be stored under path/property_name as distinct Series</span>
 <span class="sd">        2D arrays will be stored under path/property_name as distinct DataFrames</span>
-<span class="sd">        </span>
+
 <span class="sd">        Units will be stored as their CGS value</span>
-<span class="sd">        </span>
+
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        path_or_buf : str or pandas.io.pytables.HDFStore</span>
@@ -426,7 +426,7 @@
 <span class="sd">            stored.</span>
 <span class="sd">        overwrite : bool</span>
 <span class="sd">            If the HDF file path already exists, whether to overwrite it or not</span>
-<span class="sd">        </span>
+
 <span class="sd">        Notes</span>
 <span class="sd">        -----</span>
 <span class="sd">        `overwrite` option doesn&#39;t have any effect when `path_or_buf` is an</span>
@@ -618,7 +618,7 @@
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2013, TARDIS collaboration.
+        &#169; Copyright 2013-2021, TARDIS collaboration.
 
     </p>
   </div>
